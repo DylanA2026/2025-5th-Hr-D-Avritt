@@ -19,11 +19,10 @@ NumList.pop(0)
 print(NumList)
 print(EmptyList)
 #7. Add the two numbers in the second list together and print the result.
-print(EmptyList[0] + EmptyList[1])
+EmptyList = [EmptyList[0] + EmptyList[1]]
+print(EmptyList)
 #8. Move the number back to the first list (like you did in #4 and #5 but reversed).
-NumList.append(EmptyList[1])
-EmptyList.pop(1)
-#5. Remove the first number from the first list and add it to the second list.
+
 NumList.append(EmptyList[0])
 EmptyList.pop(0)
 #9. Sort the first list from lowest to highest and print it.

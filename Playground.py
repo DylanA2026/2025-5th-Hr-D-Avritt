@@ -1,20 +1,23 @@
 import random
 
-RandomNumber = random.randint(1, 100)
+RandomNumber = random.randint(1, 10)
 print("Welcome to the Number Guessing Game! I'm thinking of a number between 1 and 100.")
 numberGuessed = (int(input("Guess a number between 1 and 100: ")))
 
 attempts = 0
+while True:
+    try:
+        numberGuessed = (int(input("Guess a number between 1 and 100: ")))
+        attempts += 1
 
-attempts += 1
-if numberGuessed < RandomNumber:"Too low"
-elif numberGuessed > RandomNumber:"Too high"
-else:
-    print("You got it right!")
-
-if attempts == 3: print("Sorry you ran out of attempts!")
-print("Thank you for playing!")
-print(RandomNumber)
+        if numberGuessed < RandomNumber:print("Too low. Try Again")
+        elif numberGuessed > RandomNumber:print("Too high. Try Again")
 
 
+        else:
+          print("You got it right!")
+        break
+    except ValueError:
+        print("Invalid input. Please enter a whole number.")
 
+print(f"Thank you for playing! I guessed the number was {RandomNumber}")

@@ -1,6 +1,7 @@
 #Name:
 #Class: 5th Hour
 #Assignment: Scenario 1
+import time
 
 #Scenario 1:
 #You are a programmer for a fledgling game developer. Your team lead has asked you
@@ -41,3 +42,17 @@ Creatures = {
     },
 }
 
+enemy_Damage = 0
+print(f"enemys current damage {enemy_Damage}")
+enemy_Damage = enemy_Damage + Creatures["Creature_1"]["Damage"]
+print(f"Creature 1 Has attacked enemy. Your current damage is {enemy_Damage}")
+enemy_Damage = enemy_Damage + Creatures["Creature_2"]["Damage"]
+print(f"Creature 2 Has attacked enemy. Your current damage is {enemy_Damage}")
+enemy_Damage = enemy_Damage + Creatures["Creature_3"]["Damage"]
+print(f"Creature 3 Has attacked enemy. Your current damage is {enemy_Damage}")
+enemy_Damage += Creatures["Creature_4"]["Damage"]
+print(f"Creature 4 Has attacked enemy. Your current damage is {enemy_Damage}")
+print("You have died and the 5th creature is about to mutulate your body!")
+time.sleep(5)
+enemy_Damage += Creatures["Creature_5"]["Damage"]
+print(f"Creature 5 Has attacked enemy. Your current damage is {enemy_Damage}")

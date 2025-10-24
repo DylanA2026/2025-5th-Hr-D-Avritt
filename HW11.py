@@ -29,9 +29,9 @@ temp = random.randint(1,30)
 
 if temp > 20 :
     print("Its Hot")
-if temp > 10 and temp < 20 :
+elif temp > 10 :
     print("Its Mild")
-if temp < 10 :
+else:
     print("Its Cold")
 
 print("Thank You")

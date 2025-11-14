@@ -30,11 +30,11 @@ for a in animals:
 
 #5. Create a for loop that spells out a word you input backwards.
 #(HINT: Google "How to reverse a string in Python")
-reversed_string = ""
 
-for d in input("Input a word to say backwords"):
-    reversed_string = d + reversed_string
-    print(reversed_string)
+
+for d in input("Input a word to say backwords")[::-1]:
+    print(d)
+
 
 #6. Create a list containing 10 integers of your choice and print the list.
 inte = [11,21,36,45,51,69,76,81,96,101]
@@ -46,13 +46,12 @@ oddNumbers = 0
 
 #8. Make a loop that counts the number of even and odd numbers in the list, and prints the
 #result after the loop.
-numbers = []
-for num in numbers:
+for num in inte:
     if num % 2 == 0:
         evenNumbers += 1
     else:
         oddNumbers += 1
-
+print(evenNumbers, oddNumbers)
 
 #9. Create a variable that asks the user for an integer and an empty integer variable.
 NumInput = int(input("insert a number: "))

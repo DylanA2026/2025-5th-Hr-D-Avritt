@@ -11,10 +11,10 @@
 
 x = 0
 
-while 5>3:
+while True:
     players = int(input("Insert the number of players: ? "))
     if players <= 1:
-        print("You must ahve more than 1 player")
+        print("You must have more than 1 player")
         continue
     count = players
     while not players == 0:

@@ -15,7 +15,7 @@ d = a + b
 e = d /c
 print(e)
 #5. Round the result from #3 up or down, and then determine if it is even or odd.
-round(e)
+e = round(e)
 if e % 2 == 0:
     print("Even")
 else:
@@ -39,7 +39,7 @@ print(randomList[3])
 i = 1
 while i <= 101:
     print(i)
-    i = i + 1
+    i = i + i
 
 #11. Create a list containing the names of five other students in the classroom.
 students = [

@@ -36,8 +36,8 @@ print(x)
 #7. Create a def function that multiplies the value of 2 by a random number between 1 and 5.
 def x_multiply():
     global x
-x = x * random.randint(1,5)
+    x = x * random.randint(1,5)
 
-
+x_multiply()
 #8. Print the new value of x.
 print(x)

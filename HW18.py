@@ -34,7 +34,10 @@ beanBag = [
     "blue",
     "yellow",
     "green",
-    "pink"
+    "pink",
+    "cyan",
+    "magenta",
+    "brown"
     ]
 
 #7. Create a def function that pulls a random bean out of the beanBag list, prints which bean you pulled, and then removes it from the list.

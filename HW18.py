@@ -41,7 +41,7 @@ beanBag = [
     ]
 
 #7. Create a def function that pulls a random bean out of the beanBag list, prints which bean you pulled, and then removes it from the list.
-def BeanPull(*beanbag):
+def BeanPull():
     chosenBean = random.choice(beanBag)
     print(f"Chosen bean: {chosenBean}")
     beanBag.remove(chosenBean)

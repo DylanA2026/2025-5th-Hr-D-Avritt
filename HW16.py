@@ -24,12 +24,12 @@ def loop(l):
 
 #5. Call all of the functions created in 1 - 4 with relevant arguments.
 
-hello_world()
-average(1, 2, 3)
-animal_list("cat", "dog", "monkey", "mouse", "rabbit")
-loop(int(input("Enter number to loop: ")))
+#hello_world()
+#average(1, 2, 3)
+#animal_list("cat", "dog", "monkey", "mouse", "rabbit")
+#loop(int(input("Enter number to loop: ")))
 
-#6. Create a variable x that has the value of 2. Print x
+#6. C`reate a variable x that has the value of 2. Print x
 x = 2
 print(x)
 

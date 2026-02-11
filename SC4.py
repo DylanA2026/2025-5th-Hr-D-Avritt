@@ -36,11 +36,8 @@ statList = []
 char_stats()
 print(statList)
 # 5 more times
-char_stats()
-char_stats()
-char_stats()
-char_stats()
-char_stats()
+for _ in range(5):
+    char_stats()
 print(statList)
 
 

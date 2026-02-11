@@ -11,7 +11,7 @@ import random
 
 #Once that is done, to ensure that the average of the statblock is fair (somewhere roughly between 12-13), he wants you
 #to plug it into a calculator (SC5) and print the average.
-
+statList = []
 # Roll 4 d6 dice
 def char_stats():
     diceRoll = [
@@ -20,7 +20,7 @@ def char_stats():
         random.randint(1,6),
         random.randint(1,6),
     ]
-    global statList
+
 #Sort from hightest to lowest
     diceRoll.sort(reverse=True)
 
@@ -28,12 +28,9 @@ def char_stats():
     statTotal = diceRoll[0]+diceRoll[1]+diceRoll[2]
 
     statList.append(statTotal)
-# Add sum to a list outside function
-statList = []
 
 #run function 5 more times (6 total) and print all stats from list
 
-# 5 more times
 for _ in range(6):
     char_stats()
 print(statList)

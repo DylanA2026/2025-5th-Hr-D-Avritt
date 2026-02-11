@@ -32,11 +32,9 @@ def char_stats():
 statList = []
 
 #run function 5 more times (6 total) and print all stats from list
-# 1st time
-char_stats()
-print(statList)
+
 # 5 more times
-for _ in range(5):
+for _ in range(6):
     char_stats()
 print(statList)
 
